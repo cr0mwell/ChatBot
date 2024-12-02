@@ -16,7 +16,6 @@ class ChatLogic
 private:
     // data handles (owned)
     std::vector<std::unique_ptr<GraphNode>> _nodes;
-    //std::vector<std::unique_ptr<GraphEdge>> _edges;
 
     // data handles (not owned)
     GraphNode *_currentNode;
@@ -34,7 +33,7 @@ public:
     // constructor / destructor
     ChatLogic();
     ~ChatLogic();
-
+    
     // getter / setter
     void SetPanelDialogHandle(ChatBotPanelDialog *panelDialog);
     void SetChatbotHandle(ChatBot *chatbot);
